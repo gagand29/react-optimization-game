@@ -1,0 +1,168 @@
+/* Full Page Setup */
+.level1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+}
+
+/* Title Section */
+.level-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Instruction Box */
+.instruction-box {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: yellow;
+    font-weight: bold;
+}
+
+/* 🟢 Problem/Solution Section */
+.explanation {
+    background: #000000;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1200px;
+    text-align: left;
+    /* box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); */
+    margin-bottom: 20px;
+}
+
+.explanation p {
+    font-size: 1.3rem; /* Make problem & solution text larger */
+}
+
+
+/* 🔴 Problem Heading */
+.problem-heading {
+    color: #ff5252;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 🟢 Solution Heading */
+.solution-heading {
+    color: #4caf50;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Syntax Box */
+.syntax-box {
+    background: #272727;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #00e676;
+    border-left: 4px solid #00e676;
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+
+/* Counter Wrapper */
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Counter Box */
+.counter-box {
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Flash Animation for Unoptimized (Red) */
+.unoptimized {
+    background-color: #b22222;
+    border: 3px solid red;
+    transition: background 0.3s ease-in-out;
+}
+
+.flash {
+    background-color: #ff4444 !important;
+    transform: scale(1.1);
+}
+
+/* Optimized Box */
+.optimized {
+    background-color: #006400;
+    border: 3px solid green;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Message for Rerendering */
+.rerender-msg {
+    font-size: 1rem;
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.unoptimized-btn {
+    background-color: red;
+    padding: 12px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.optimized-btn {
+    background-color: green;
+    padding: 12px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Large Optimized Button */
+.large-btn {
+    margin-top: 20px;
+    width: 300px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .counter-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
