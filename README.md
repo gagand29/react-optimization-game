@@ -48,7 +48,7 @@ This project is designed to **teach beginners and advanced developers** how to *
 ## 🚀 Getting Started
 ### 📌 **Install & Run Locally**
 ```sh
-git clone https://github.com/yourusername/react-optimization-game.git
+git clone https://github.com/gagan29d/react-optimization-game.git
 cd react-optimization-game
 npm install
 npm run dev
