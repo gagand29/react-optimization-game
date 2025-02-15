@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Level1 from "./pages/Level1";
+import Level2 from "./pages/Level2";
 import Navbar from "./components/Navbar";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/level1" element={<Level1 />} />
+          <Route path="/level2" element={<Level2 />} />
         </Routes>
       </div>
     </Router>

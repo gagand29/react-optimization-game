@@ -1,0 +1,229 @@
+/* 🌍 General Styling */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* 🏆 Navigation Bar - Full Width */
+.navbar {
+    width: 100vw;
+    background-color: #0d1117;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00e676;
+}
+
+/* 🏆 Main Container */
+.level2-container {
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🎮 Game Title */
+.game-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00e676;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 🏆 Level Title */
+.level-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 📚 Explanation Box */
+.explanation {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    font-size: 1.2rem;
+    text-align: left;
+    color: yellow;
+}
+
+/* 🔴 Problem & 🟢 Solution Headings */
+.problem-heading {
+    color: #ff5252;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.solution-heading {
+    color: #4caf50;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* 🎓 Parent Section */
+.parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* 🏫 Parent Box */
+.parent-box {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 🏫 Child Components Section */
+.children-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* 📚 Child Box */
+.child-box {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 320px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* 🎮 Flash Effect for Unoptimized Student */
+.unoptimized {
+    background-color: #b22222;
+    border: 3px solid red;
+}
+
+.flash {
+    background-color: #ff4444 !important;
+    transform: scale(1.05);
+}
+
+/* 📗 Optimized Student */
+.optimized {
+    background-color: #006400;
+    border: 3px solid green;
+}
+
+/* 🎮 Buttons */
+.unoptimized-btn,
+.optimized-btn {
+    padding: 12px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.unoptimized-btn {
+    background-color: red;
+}
+
+.optimized-btn {
+    background-color: green;
+}
+
+.unoptimized-btn:hover,
+.optimized-btn:hover {
+    transform: scale(1.05);
+}
+
+/* 🚀 Next Level Button */
+.next-level-button {
+    background-color: #007bff;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.next-level-button:hover {
+    transform: scale(1.05);
+}
+
+/* 📱 Mobile & Tablet Responsive Design */
+@media (max-width: 1024px) {
+    .game-title {
+        font-size: 2rem;
+    }
+
+    .level-title {
+        font-size: 1.8rem;
+    }
+
+    .explanation {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .parent-container, .children-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parent-box, .child-box {
+        width: 90%;
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-title {
+        font-size: 1.8rem;
+    }
+
+    .level-title {
+        font-size: 1.5rem;
+    }
+
+    .explanation {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .parent-box, .child-box {
+        width: 95%;
+        max-width: 320px;
+    }
+
+    .unoptimized-btn,
+    .optimized-btn,
+    .next-level-button {
+        font-size: 1rem;
+    }
+}
