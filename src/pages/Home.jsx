@@ -12,6 +12,7 @@ export default function Home() {
         Start Level 1
       </Link>
       <Link to="/level2" className="home-button">Start Level 2</Link>
+      <Link to="/level3" className="home-button">Start Level 3</Link>
     </div>
   );
 }

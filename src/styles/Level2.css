@@ -1,33 +1,18 @@
 /* 🌍 General Styling */
 body {
     font-family: "Arial", sans-serif;
-    background-color: #121212;
+    background-color: #0d1117;
     color: white;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-/* 🏆 Navigation Bar - Full Width */
-.navbar {
-    width: 100vw;
-    background-color: #0d1117;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #00e676;
+    justify-content: center;
 }
 
 /* 🏆 Main Container */
 .level2-container {
-    width: 100vw;
+    width: 100%;
+    max-width: 1200px;
     padding: 20px;
     text-align: center;
 }
@@ -51,16 +36,14 @@ body {
 
 /* 📚 Explanation Box */
 .explanation {
-    background: #222;
+    background: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    width: 90%;
+    width: 95%;
     max-width: 900px;
     margin: 20px auto;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
     font-size: 1.2rem;
-    text-align: left;
-    color: yellow;
 }
 
 /* 🔴 Problem & 🟢 Solution Headings */
@@ -74,6 +57,20 @@ body {
     color: #4caf50;
     font-size: 1.4rem;
     margin-bottom: 10px;
+}
+
+/* 📝 Syntax Box */
+.syntax-box {
+    background: #272727;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    color: #00e676;
+    border-left: 4px solid #00e676;
+    white-space: pre-wrap;
+    margin-top: 10px;
+    overflow-x: auto;
 }
 
 /* 🎓 Parent Section */
@@ -113,15 +110,16 @@ body {
     text-align: center;
     width: 320px;
     font-weight: bold;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* 🎮 Flash Effect for Unoptimized Student */
+/* 📕 Unoptimized Student */
 .unoptimized {
     background-color: #b22222;
     border: 3px solid red;
+    transition: background 0.3s ease-in-out;
 }
 
+/* 🔥 Flash Animation for Rerendering */
 .flash {
     background-color: #ff4444 !important;
     transform: scale(1.05);
@@ -214,6 +212,10 @@ body {
     .explanation {
         font-size: 0.9rem;
         padding: 15px;
+    }
+
+    .syntax-box {
+        font-size: 0.9rem;
     }
 
     .parent-box, .child-box {

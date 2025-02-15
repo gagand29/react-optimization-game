@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Level1.css";
 
 export default function Level1() {
   const [count, setCount] = useState(0);
+  const [ flash, setFlash]=useState(false);
 
   console.log("Counter Component Rerendered!");
+
+  useEffect(() =>{
+    setFlash(true);
+    const timer = setTimeout(() => setFlash(false), 500);
+    return () => clearTimeout(timer);
+
+  },[count]);
 
   return (
     <div className="level1-container">
@@ -17,7 +25,8 @@ export default function Level1() {
       </div>
 
       {/* Counter Component */}
-      <div className="counter-box">
+
+      <div className={`counter-box ${flash?"flash":""}`}>
         <h3>Counter Component</h3>
         <p className="counter">{count}</p>
         <button
